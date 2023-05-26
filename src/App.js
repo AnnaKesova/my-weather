@@ -66,7 +66,7 @@ function App() {
                     <div>
                       {data.main ? (
                         <h1 className="temp">
-                          {Math.round((data.main.temp.toFixed() - 32) / 1.8)}°
+                          {Math.round((data.main.temp - 32) / 1.8)}°
                         </h1>
                       ) : null}
                     </div>
@@ -83,7 +83,7 @@ function App() {
                       {data.main ? (
                         <p className="description__about">
                           {Math.round(
-                            (data.main.feels_like.toFixed() - 32) / 1.8
+                            (data.main.feels_like - 32) / 1.8
                           )}
                           °
                         </p>
@@ -109,7 +109,7 @@ function App() {
                 </div>
               </div>
               <div className="container__description additional">
-              <div className="humidity">
+              <div className="Visibility">
                       <p className="description__about">Visibility</p>
                       {data.sys ? (
                         <p className="description__about">
@@ -117,7 +117,7 @@ function App() {
                         </p>
                       ) : null}
                     </div>
-                    <div className="humidity">
+                    <div className="Pressure">
                       <p className="description__about">Pressure</p>
                       {data.main ? (
                         <p className="description__about">
@@ -125,19 +125,19 @@ function App() {
                         </p>
                       ) : null}
                     </div>
-                    <div className="humidity">
-                      <p className="description__about">Rain</p>
-                      {data.rain ? (
+                    <div className="Longitude">
+                      <p className="description__about">Longitude</p>
+                      {data.coord ? (
                         <p className="description__about">
-                          {data.rain}
+                          {data.coord.lon.toFixed(2)}
                         </p>
                       ) : null}
                     </div>
-                    <div className="humidity">
-                      <p className="description__about">Humidity</p>
-                      {data.main ? (
+                    <div className="Latitude">
+                      <p className="description__about">Latitude</p>
+                      {data.coord ? (
                         <p className="description__about">
-                          {data.main.humidity}%
+                          {data.coord.lat.toFixed(2)}
                         </p>
                       ) : null}
                     </div>
