@@ -1,0 +1,108 @@
+@import "https://fonts.fontstorage.com/import/roboto.css";
+@import url(../src/vendor/normalize.css);
+
+.app {
+  background-color: #fff;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1280px;
+  height: 1123px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../src/images/Clouds\ background\ in\ purple\ colors.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 70px 50px;
+}
+
+.search__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: inherit;
+  font-size: 32px;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #706969;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.container__description {
+  padding: 50px 25px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: rgba(166, 156, 156, 30%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.container__description:last-of-type {
+  margin-bottom: 0;
+} 
+
+.top__location {
+  margin-bottom: 20px;
+}
+
+.top {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.top__name {
+  font-size: 58px;
+  margin: 0;
+}
+
+.temp {
+  font-size: 36px;
+  margin: 0;
+}
+
+.bottom__style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__about {
+  font-family: inherit;
+  font-weight: 500;
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description__about:last-of-type {
+  margin-bottom: 0;
+}
+
+.additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
