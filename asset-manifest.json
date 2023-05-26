@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AnnaKesova/my-weather.git/static/css/main.a8623b41.css",
+    "main.js": "/AnnaKesova/my-weather.git/static/js/main.16f2d467.js",
+    "static/js/787.28cb0dcd.chunk.js": "/AnnaKesova/my-weather.git/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Frame 2.svg": "/AnnaKesova/my-weather.git/static/media/Frame 2.e706eacefa50f84d65d2.svg",
+    "index.html": "/AnnaKesova/my-weather.git/index.html",
+    "main.a8623b41.css.map": "/AnnaKesova/my-weather.git/static/css/main.a8623b41.css.map",
+    "main.16f2d467.js.map": "/AnnaKesova/my-weather.git/static/js/main.16f2d467.js.map",
+    "787.28cb0dcd.chunk.js.map": "/AnnaKesova/my-weather.git/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8623b41.css",
+    "static/js/main.16f2d467.js"
+  ]
+}
