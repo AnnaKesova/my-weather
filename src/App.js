@@ -24,19 +24,12 @@ function App() {
       fetch(url).then((response) => {
         response.text().then(function (text) {
           setData(JSON.parse(text));
-          console.log(JSON.parse(text));
+          // console.log(JSON.parse(text));
         });
       });
       setLocation("");
     }
   };
-
-  /* const tempCelcium = (data) => {
-    data.main.temp.toFixed()
- //   console.log(data.main.temp())
-  }
-
-  console.log (searchLocation(data.main.temp))*/
 
   return (
     <div className="app">
@@ -82,10 +75,7 @@ function App() {
                       <p className="description__about">Feels Like</p>
                       {data.main ? (
                         <p className="description__about">
-                          {Math.round(
-                            (data.main.feels_like - 32) / 1.8
-                          )}
-                          °
+                          {Math.round((data.main.feels_like - 32) / 1.8)}°
                         </p>
                       ) : null}
                     </div>
@@ -109,38 +99,36 @@ function App() {
                 </div>
               </div>
               <div className="container__description additional">
-              <div className="Visibility">
-                      <p className="description__about">Visibility</p>
-                      {data.sys ? (
-                        <p className="description__about">
-                          {data.visibility}
-                        </p>
-                      ) : null}
-                    </div>
-                    <div className="Pressure">
-                      <p className="description__about">Pressure</p>
-                      {data.main ? (
-                        <p className="description__about">
-                          {data.main.pressure} hPa
-                        </p>
-                      ) : null}
-                    </div>
-                    <div className="Longitude">
-                      <p className="description__about">Longitude</p>
-                      {data.coord ? (
-                        <p className="description__about">
-                          {data.coord.lon.toFixed(2)}
-                        </p>
-                      ) : null}
-                    </div>
-                    <div className="Latitude">
-                      <p className="description__about">Latitude</p>
-                      {data.coord ? (
-                        <p className="description__about">
-                          {data.coord.lat.toFixed(2)}
-                        </p>
-                      ) : null}
-                    </div>
+                <div className="Visibility">
+                  <p className="description__about">Visibility</p>
+                  {data.sys ? (
+                    <p className="description__about">{data.visibility}</p>
+                  ) : null}
+                </div>
+                <div className="Pressure">
+                  <p className="description__about">Pressure</p>
+                  {data.main ? (
+                    <p className="description__about">
+                      {data.main.pressure} hPa
+                    </p>
+                  ) : null}
+                </div>
+                <div className="Longitude">
+                  <p className="description__about">Longitude</p>
+                  {data.coord ? (
+                    <p className="description__about">
+                      {data.coord.lon.toFixed(2)}
+                    </p>
+                  ) : null}
+                </div>
+                <div className="Latitude">
+                  <p className="description__about">Latitude</p>
+                  {data.coord ? (
+                    <p className="description__about">
+                      {data.coord.lat.toFixed(2)}
+                    </p>
+                  ) : null}
+                </div>
               </div>
             </div>
           )}
